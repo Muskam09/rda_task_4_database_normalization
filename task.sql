@@ -14,7 +14,7 @@ CREATE TABLE Products (
 );
 
 CREATE TABLE Warehouses (
-	ID INT AUTO_INCREMENT,
+    ID INT AUTO_INCREMENT,
     Name VARCHAR(50),
     Address VARCHAR(50),
     CountryID INT,
@@ -31,7 +31,6 @@ CREATE TABLE ProductInventory (
     FOREIGN KEY (WarehouseID) REFERENCES Warehouses(ID) ON DELETE NO ACTION,
     PRIMARY KEY (ID)
 );
-
 
 INSERT INTO Countries (ID,Name)
 	VALUES (1, 'Country1');
